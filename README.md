@@ -8,7 +8,7 @@ Tujuannya adalah untuk memahami cara kerja utility-first framework ini dan bagai
 ## 📂 Struktur Proyek
 
 Setiap folder di dalam repositori ini merupakan proyek terpisah.  
-Beberapa contoh (akan terus bertambah seiring proses belajar):
+Beberapa contoh (akan terus bertambah seiring proses belajar)
 
 ---
 
