@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mozilla+Headline:wght@200..700&display=swap');
+
+@theme{
+    --font-baskerville: "Libre Baskerville";
+    --font-mozillaHeadline: "Mozilla Headline";
+}
+
+@layer base{
+    body{
+        @apply bg-green-950 text-white font-baskerville;
+    }
+    .nav-link{
+        @apply text-lg font-bold duration-300;
+    }
+    .nav-link:hover{
+        @apply text-yellow-500;
+    }
+}
