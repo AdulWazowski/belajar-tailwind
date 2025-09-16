@@ -8,7 +8,10 @@
 
 @layer base{
     body{
-        @apply bg-green-950 text-white font-baskerville;
+        @apply bg-stone-100 text-gray-800 font-baskerville;
+    }
+    body header{
+        @apply text-stone-100;
     }
     .nav-link{
         @apply text-lg font-bold duration-300;
