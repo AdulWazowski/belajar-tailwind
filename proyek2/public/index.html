@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="./css/styles.css">
-	<link rel="stylesheet" href="./css/custom.css">
 	<link href="../node_modules/remixicon/fonts/remixicon.css" rel="stylesheet">
 
 </head>
@@ -13,7 +12,7 @@
 	<div id="header"></div>
 
 	<main>
-		<section id="hero-section" class="mt-[40dvh] absolute w-full h-screen bg-[url(../img/hero-section.png)] bg-cover bg-center">
+		<section id="hero-section" class="mt-[40dvh] w-full h-[720px] bg-[url(../img/hero-section.png)] bg-cover bg-center">
 			<div class="bg-[#0000003f] h-full w-full flex items-center">
 				<div class="mx-42 gap-3 flex flex-col justify-center items-start h-[70%]">
 					<h3 class="text-4xl text-white">
@@ -29,8 +28,68 @@
 						<br>
 						Favorite Brands
 					</h2>
+					<div class="mt-4">
+						<a id="hero-btn" href="shop now" class="text-stone-100 px-6 py-2.5 bg-[#568F87] rounded-4xl outline-2 outline-[#568F87] focus:outline-2 hover:bg-stone-100 hover:cursor-pointer hover:text-[#568F87] focus:outline-[#568F87] transition-colors ease-in-out duration-300">
+							Shop Now
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="h-52 flex items-center justify-center">
+			<div class="flex flex-row gap-2 justify-around">
+				<div class="flex flex-row gap-3 border-r-2 border-stone-900 pr-7">
+					<i class="ri-truck-line text-5xl text-[#568F87]"></i>
 					<div>
-						<a href="shop now">Shop Now</a>
+						<h5 class="text-black text-xl">
+							Free Delivery
+						</h5>
+						<p>
+							To Your Door
+						</p>
+					</div>
+				</div>
+				<div class="flex flex-row gap-3 border-r-2 border-stone-900 pr-7 pl-1">
+					<i class="ri-shopping-basket-line text-5xl text-[#568F87]"></i>
+					<div>
+						<h5 class="text-black text-xl">
+							Local Pickup
+						</h5>
+						<p>
+							Check Out
+							<a href="" class="underline">
+								Locations
+							</a>
+						</p>
+					</div>					
+				</div>
+				<div class="flex flex-row gap-3 border-r-2 border-stone-900 pr-7 pl-1">
+					<i class="ri-customer-service-2-line text-5xl text-[#568F87]"></i>
+					<div>
+						<h5 class="text-black text-xl">
+							Available for You
+						</h5>
+						<p>
+							<a href="" class="underline">
+								Online Support
+							</a>
+							24/7
+						</p>
+					</div>
+				</div>
+				<div class="flex flex-row gap-3 pl-1">
+					<i class="ri-smartphone-line text-5xl text-[#568F87]"></i>
+					<div>
+						<h5 class="text-black text-xl">
+							Order on the Go
+						</h5>
+						<p>
+							<a href="" class="underline">
+								Download
+							</a>
+							Our App
+						</p>
 					</div>
 				</div>
 			</div>

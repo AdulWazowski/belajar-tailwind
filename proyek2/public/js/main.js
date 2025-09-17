@@ -19,21 +19,24 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 // Hide & Show Header
-let lastScroll = 0;
-const header = document.getElementById("header");
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.getElementById('headerr');
+    let lastScrollTop = 0;
+    const scrollThreshold = 150; // Point at which header starts to hide (in pixels)
 
-window.addEventListener("scroll", () => {
-  let currentScroll = window.scrollY;
+    window.addEventListener('scroll', () => {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (currentScroll > lastScroll && currentScroll > 200) {
-    // Scroll ke bawah → sembunyikan
-    header.classList.remove("show");
-    header.classList.add("hide");
-  } else {
-    // Scroll ke atas → tampilkan
-    header.classList.remove("hide");
-    header.classList.add("show");
-  }
+        if (currentScroll > lastScrollTop && currentScroll > scrollThreshold) {
+            // Scrolling down past threshold
+            headerr.classList.remove('translate-y-0');
+            headerr.classList.add('-translate-y-full');
+        } else if (currentScroll < lastScrollTop && currentScroll <= scrollThreshold) {
+            // Scrolling up and within threshold
+            headerr.classList.remove('-translate-y-full');
+            headerr.classList.add('translate-y-0');
+        }
 
-  lastScroll = currentScroll;
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
+    });
 });
