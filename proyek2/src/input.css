@@ -13,10 +13,10 @@
     body header{
         @apply text-stone-100;
     }
-    .nav-link{
-        @apply text-lg font-bold duration-300;
+    .btn-costum-1{
+        @apply px-7 py-2 text-stone-100 font-bold bg-[#568F87] rounded-4xl outline-2 outline-[#568F87] transition-colors ease-in-out duration-300;
     }
-    .nav-link:hover{
-        @apply text-yellow-500;
+    .btn-custom-2{
+        @apply px-4 py-1 rounded-3xl bg-[#568F87];
     }
 }
