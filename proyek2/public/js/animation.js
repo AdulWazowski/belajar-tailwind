@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementById('headerr');
     let lastScrollTop = 0;
-    const scrollThreshold = 250; // Point at which header starts to hide (in pixels)
+    const scrollThreshold = 300; // Point at which header starts to hide (in pixels)
 
     window.addEventListener('scroll', () => {
         let currentScroll = window.pageYOffset || document.documentElement.scrollTop;

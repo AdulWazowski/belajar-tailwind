@@ -14,8 +14,10 @@ async function loadComponent(targetId, file) {
 // Load header & footer
 window.addEventListener("DOMContentLoaded", () => {
   loadComponent("header", "./layout/header.html");
-  loadComponent("footer", "footer.html");
+  loadComponent("footer", "./layout/footer.html");
+
   loadComponent("hero-section", "./layout/hero-section.html");
   loadComponent("feature-section", "./components/feature-section.html");
   loadComponent("product-list", "./components/product-list.html");
+  loadComponent("article-2-1", "./components/article-2-1.html");
 });
