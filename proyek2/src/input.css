@@ -10,6 +10,9 @@
     body{
         @apply bg-stone-100 text-gray-800 font-baskerville;
     }
+    body footer{
+        @apply text-stone-100 font-baskerville;
+    }
     body header{
         @apply text-stone-100;
     }

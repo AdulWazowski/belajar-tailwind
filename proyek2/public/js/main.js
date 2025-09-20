@@ -20,4 +20,5 @@ window.addEventListener("DOMContentLoaded", () => {
   loadComponent("feature-section", "./components/feature-section.html");
   loadComponent("product-list", "./components/product-list.html");
   loadComponent("article-2-1", "./components/article-2-1.html");
+  loadComponent("popular-categories", "./components/popular-categories.html");
 });
