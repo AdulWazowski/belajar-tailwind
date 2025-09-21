@@ -18,7 +18,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
   loadComponent("hero-section", "./layout/hero-section.html");
   loadComponent("feature-section", "./components/feature-section.html");
-  loadComponent("product-list", "./components/product-list.html");
+  loadComponent("best-deals", "./components/best-deals.html");
   loadComponent("article-2-1", "./components/article-2-1.html");
   loadComponent("popular-categories", "./components/popular-categories.html");
+  loadComponent("start-your-cart", "./components/start-your-cart.html");
+  loadComponent("app-store", "./components/app-store.html");
+  loadComponent("most-popular", "./components/most-popular.html");
+  loadComponent("subscribe", "./components/subscribe.html");
 });
