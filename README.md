@@ -23,4 +23,4 @@ Beberapa contoh (akan terus bertambah seiring proses belajar)
 
 Clone repo ini:
    ```bash
-   git clone https://github.com/AdulWazowski/belajar-tailwind.git
+   git clone https://github.com/pikopikk/belajar-tailwind.git
