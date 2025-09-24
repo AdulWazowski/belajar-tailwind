@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <section class="bg-amber-300 h-screen">
+    <h1>
+      hero
+    </h1>
+  </section>
+
+  <section class="el-hidden">
+    <h1>
+      ahuy ahuy
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dolore obcaecati? Neque.
+    </p>
+  </section>
+
+  <section class="el-hidden">
+    <h2>
+      awik awik
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, velit.
+    </p>
+  </section>
+
+  <section class="el-hidden">
+    <h1>
+      oke oke
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing.
+    </p>
+  </section>
+
+  <script>
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('el-show')
+        } else{
+            entry.target.classList.remove('el-show')
+        }
+    })
+})
+const elHidden = document.querySelectorAll('.el-hidden')
+elHidden.forEach((el)=> observer.observe(el))
+  </script>
+</body>
+</html>

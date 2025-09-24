@@ -2,28 +2,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mozilla+Headline:wght@200..700&display=swap');
 
 @theme{
-    --font-baskerville: "Libre Baskerville";
-    --font-mozillaHeadline: "Mozilla Headline";
+	--font-baskerville: "Libre Baskerville";
+	--font-mozillaHeadline: "Mozilla Headline";
+}
+
+@layer utilities{
+	/* scroll animation */
+		.el-hidden{
+		@apply opacity-0 transition-all duration-700 ease-out;;
+	}
+	.el-show{
+		@apply opacity-100;
+	}
+	.el-fade-up {
+		@apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+	}
+	.el-fade-up.el-show {
+		@apply opacity-100 translate-y-0;
+	}
+	.el-fade-down {
+		@apply opacity-0 -translate-y-8 transition-all duration-700 ease-out;
+	}
+	.el-fade-down.el-show {
+		@apply opacity-100 translate-y-0;
+	}
+	.el-fade-left {
+		@apply opacity-0 -translate-x-8 transition-all duration-700 ease-out;
+	}
+	.el-fade-left.el-show {
+		@apply opacity-100 translate-x-0;
+	}
+	.el-fade-right {
+		@apply opacity-0 translate-x-8 transition-all duration-700 ease-out;
+	}
+	.el-fade-right.el-show {
+	@apply opacity-100 translate-x-0;
+	}
+	.el-zoom-in {
+		@apply opacity-0 scale-75 transition-all duration-700 ease-out;
+	}
+	.el-zoom-in.el-show {
+		@apply opacity-100 scale-100;
+	}
+	.el-zoom-out {
+		@apply opacity-0 scale-125 transition-all duration-700 ease-out;
+	}
+	.el-zoom-out.el-show {
+		@apply opacity-100 scale-100;
+	}
+	.el-rotate-in {
+		@apply opacity-0 -rotate-6 transition-all duration-700 ease-out;
+	}
+	.el-rotate-in.el-show {
+		@apply opacity-100 rotate-0;
+	}
+	.el-rotate-x {
+		@apply opacity-0 -rotate-x-12 transition-all duration-700 ease-out;
+	}
+	.el-rotate-x.el-show {
+		@apply opacity-100 rotate-x-0;
+	}
+	.el-rotate-y {
+		@apply opacity-0 -rotate-y-12 transition-all duration-700 ease-out;
+	}
+	.el-rotate-y.el-show {
+		@apply opacity-100 rotate-y-0;
+	}
+	.el-flip-x {
+		@apply opacity-0 rotate-x-90 transition-all duration-700 ease-out;
+	}
+	.el-flip-x.el-show {
+		@apply opacity-100 rotate-x-0;
+	}
+	.el-flip-y {
+		@apply opacity-0 rotate-y-90 transition-all duration-700 ease-out;
+	}
+	.el-flip-y.el-show {
+		@apply opacity-100 rotate-y-0;
+	}
+	.el-skew-x {
+		@apply opacity-0 skew-x-6 transition-all duration-700 ease-out;
+	}
+	.el-skew-x.el-show {
+		@apply opacity-100 skew-x-0;
+	}
+	.el-skew-y {
+		@apply opacity-0 skew-y-6 transition-all duration-700 ease-out;
+	}
+	.el-skew-y.el-show {
+		@apply opacity-100 skew-y-0;
+	}
+
+	/* scroll animation | child rule */
+	.child-rule-1:nth-child(2){
+		@apply duration-[200ms]
+	}
+	.child-rule-1:nth-child(3){
+		@apply duration-[400ms]
+	}
+	.child-rule-1:nth-child(4){
+		@apply duration-[600ms]
+	}
+	.child-rule-1:nth-child(5){
+		@apply duration-[800ms]
+	}
+	.child-rule-1:nth-child(5){
+		@apply duration-[1000ms]
+	}
+	.child-rule-1:nth-child(6){
+		@apply duration-[1200ms]
+	}
+	.child-rule-1:nth-child(7){
+		@apply duration-[1400ms]
+	}
+	.child-rule-2:nth-child(2){
+		@apply duration-[200ms]
+	}
+	.child-rule-2:nth-child(3){
+		@apply duration-[400ms]
+	}
+	.child-rule-2:nth-child(4){
+		@apply duration-[600ms]
+	}
+	.child-rule-2:nth-child(5){
+		@apply duration-[800ms]
+	}
+	.child-rule-2:nth-child(5){
+		@apply duration-[1000ms]
+	}
+	.child-rule-2:nth-child(6){
+		@apply duration-[1200ms]
+	}
+	.child-rule-2:nth-child(7){
+		@apply duration-[1400ms]
+	}
+}
+
+@layer components{
+	.btn-costum-1{
+		@apply px-7 py-2 text-stone-100 font-bold bg-[#568F87] rounded-4xl outline-2 outline-[#568F87] transition-colors ease-in-out duration-300;
+	}
+	.btn-custom-2{
+		@apply px-4 py-1 rounded-3xl bg-[#568F87];
+	}
 }
 
 @layer base{
-    body{
-        @apply bg-stone-100 text-gray-800 font-baskerville;
-    }
-    body footer{
-        @apply text-stone-100 font-baskerville;
-    }
-    body header{
-        @apply text-stone-100;
-    }
-    body #subscribe,
-    body #app-store{
-        @apply text-stone-100;
-    }
-    .btn-costum-1{
-        @apply px-7 py-2 text-stone-100 font-bold bg-[#568F87] rounded-4xl outline-2 outline-[#568F87] transition-colors ease-in-out duration-300;
-    }
-    .btn-custom-2{
-        @apply px-4 py-1 rounded-3xl bg-[#568F87];
-    }
+	body{
+		@apply bg-stone-100 text-gray-800 font-baskerville;
+	}
+	body footer{
+		@apply text-stone-100 font-baskerville;
+	}
+	body header{
+		@apply text-stone-100;
+	}
+	body #subscribe,
+	body #app-store{
+		@apply text-stone-100;
+	}
 }

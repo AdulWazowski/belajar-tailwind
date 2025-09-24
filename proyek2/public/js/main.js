@@ -4,7 +4,15 @@ async function loadComponent(targetId, file) {
     const res = await fetch(file);
     if (!res.ok) throw new Error(`Gagal load ${file}`);
     const html = await res.text();
-    document.getElementById(targetId).innerHTML = html;
+    // Ambil elemen target dulu
+    const container = document.getElementById(targetId);
+
+    // Masukkan HTML ke container
+    container.innerHTML = html;
+
+    // Setelah HTML dimasukkan, attach observer ke elemen baru
+    const elHidden = container.querySelectorAll('[class*="el-"]');
+    elHidden.forEach(el => observer.observe(el));
   } catch (err) {
     console.error(err);
   }

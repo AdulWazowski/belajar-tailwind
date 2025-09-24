@@ -1,0 +1,14 @@
+[
+   {
+      "penyanyi": "Jungkook",
+      "judul": "Still With You",
+      "src": "../../src/sound/BTS Jungkook (정국) 'Still With You' Lyrics - Jaeguchi.mp3",
+      "cover": "../../src/images/still-with-you-jk-thumbnail.png"
+   },
+   {
+      "penyanyi": "V",
+      "Judul": "Fri(end)s",
+      "src": "../../src/sound/BTS V (뷔) 'FRI(END)S' Lyrics - Jaeguchi.mp3",
+      "cover": "../../src/images/friends-v-thumbnail.png"
+   }
+]

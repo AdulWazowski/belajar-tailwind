@@ -20,3 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
     });
 });
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('el-show')
+        } else{
+            entry.target.classList.remove('el-show')
+        }
+    })
+},{
+    threshold: 0.2
+})
